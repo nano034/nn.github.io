@@ -247,7 +247,6 @@ a:focus-visible, button:focus-visible, select:focus-visible{
 /* placeholder text (things the owner still needs to fill in) */
 .fill{
   color: #0a5aa8;
-  background: rgba(75,163,253,.16);
   padding: 1px 6px;
   border-radius: 6px;
   font-weight: 700;
