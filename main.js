@@ -97,10 +97,12 @@ function initScriptPage () {
       const codeEl = card.querySelector('code');
       const copyBtn = card.querySelector('.copy-btn');
       const text = codes[i] || `SC${value}-${i + 1}`;
+      // コピーされる内容: Lua用に "--カード◯" の後ろで改行してコードを続ける
+      const copyText = `--カード${i + 1}\n${text}`;
 
       if (codeEl) codeEl.textContent = text;
       if (copyBtn) {
-        copyBtn.dataset.copy = text;
+        copyBtn.dataset.copy = copyText;
         copyBtn.classList.remove('is-copied');
         copyBtn.querySelector('.copy-btn__label').textContent = 'コピー';
       }
@@ -122,9 +124,11 @@ function initCopyButtons () {
     const text = btn.dataset.copy || btn.closest('.code-frame')?.querySelector('code')?.textContent || '';
     if (!text) return;
 
+    const displayText = btn.closest('.code-frame')?.querySelector('code')?.textContent || text;
+
     try {
       await copyToClipboard(text);
-      showToast(`「${text}」をコピーしました！`);
+      showToast(`「${displayText}」をコピーしました！`);
       const label = btn.querySelector('.copy-btn__label');
       btn.classList.add('is-copied');
       if (label) {
