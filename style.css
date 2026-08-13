@@ -592,28 +592,21 @@ a:focus-visible, button:focus-visible, select:focus-visible{
   display:flex; align-items:center; gap:8px;
   margin-bottom: 10px;
 }
-.script-card__num{
-  width: 24px; height: 24px;
-  border-radius: 50%;
-  background: var(--grad-brand);
-  color:#fff;
-  font-family: var(--f-display);
-  font-size: 11px;
-  display:flex; align-items:center; justify-content:center;
-}
 .script-card__label{ font-weight: 700; font-size: 13px; color: var(--ink); }
 
 .code-frame{
-  background: #2c2f6b;
+  background: #ffffff;
+  border: 1.5px solid rgba(75,163,253,.25);
   border-radius: var(--radius-sm);
   padding: 16px 14px 46px;
   position: relative;
   min-height: 64px;
+  box-shadow: inset 0 1px 4px rgba(70,60,160,.08);
 }
 .code-frame code{
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 13px;
-  color: #d9ffee;
+  color: #1c4f9c;
   word-break: break-all;
   white-space: pre-wrap;
   line-height: 1.6;
