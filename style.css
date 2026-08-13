@@ -504,7 +504,7 @@ a:focus-visible, button:focus-visible, select:focus-visible{
   border-radius: var(--radius-sm);
   margin-bottom: 14px;
 }
-.cm-card p.desc .fill{ color: #fff; background: rgba(255,255,255,.28); }
+.cm-card p.desc .fill{ color: #fff; }
 
 .cm-card .btn--cm{
   position: relative; z-index: 1;
