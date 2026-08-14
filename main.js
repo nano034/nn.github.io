@@ -73,7 +73,7 @@ const SCRIPT_DATA = {
     cards: [
       { label: 'Infinite Yield', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()' },
       { label: 'Ghost Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh11/spicy/refs/heads/main/GhostHub.lua"))()' },
-      { label: '', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()' },
+      { label: 'Fly Gui V3', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()' },
     ],
   },
   2: {
