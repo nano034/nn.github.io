@@ -74,12 +74,13 @@ const SCRIPT_DATA = {
       { label: 'Infinite Yield', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()' },
       { label: 'Ghost Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh11/spicy/refs/heads/main/GhostHub.lua"))()' },
       { label: 'Fly Gui V3', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()' },
+      { label: 'Aim Bot', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))()' },
     ],
   },
   2: {
-    label: 'TROLL',
+    label: 'TIOLL',
     cards: [
-      { label: 'まだつくってないーー', code: '' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
     ],
   },
 };
