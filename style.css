@@ -272,7 +272,7 @@ a:focus-visible, button:focus-visible, select:focus-visible{
 .hero__logo-wrap::before{
   content:"";
   position: absolute;
-  inset: -22px;
+  inset: -10px;
   border-radius: 50%;
   background: var(--grad-brand);
   filter: blur(26px);
