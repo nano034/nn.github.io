@@ -262,7 +262,7 @@ a:focus-visible, button:focus-visible, select:focus-visible{
   position: relative;
 }
 .hero__logo-wrap{
-  width: max-width: 70%; height: auto;
+  width: max-width: 7%; height: auto;
   margin: 0 auto 14px;
   position: relative;
 }
