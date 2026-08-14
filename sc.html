@@ -67,11 +67,7 @@
       <div class="select-wrap">
         <select id="scriptSelect" aria-label="スクリプトカテゴリを選択">
           <option value="">カテゴリを選択してください</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
+          <!-- 選択肢はここに書かなくてOK。main.js の SCRIPT_DATA から自動で入ります -->
         </select>
       </div>
 
@@ -87,46 +83,7 @@
     <div class="ticket-card">
 
       <div class="script-cards" id="scriptCards">
-
-        <div class="script-card">
-          <div class="script-card__head">
-            <span class="script-card__label">カード1</span>
-          </div>
-          <div class="code-frame">
-            <code>SC?</code>
-          </div>
-          <button class="copy-btn" data-copy="">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-              <span class="copy-btn__label">コピー</span>
-            </button>
-        </div>
-
-        <div class="script-card">
-          <div class="script-card__head">
-            <span class="script-card__label">カード2</span>
-          </div>
-          <div class="code-frame">
-            <code>SC?</code>
-          </div>
-          <button class="copy-btn" data-copy="">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-              <span class="copy-btn__label">コピー</span>
-            </button>
-        </div>
-
-        <div class="script-card">
-          <div class="script-card__head">
-            <span class="script-card__label">カード3</span>
-          </div>
-          <div class="code-frame">
-            <code>SC?</code>
-          </div>
-          <button class="copy-btn" data-copy="">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-              <span class="copy-btn__label">コピー</span>
-            </button>
-        </div>
-
+        <!-- カードはここに書かなくてOK。main.js の SCRIPT_DATA から自動で生成されます -->
       </div>
 
       <p class="empty-hint" id="emptyHint">↑ プルダウンからカテゴリを選ぶとコードが表示されます</p>
