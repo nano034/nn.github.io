@@ -53,16 +53,61 @@ function initReveal () {
 /* ---------------------------------------------------------
    sc.html: カテゴリを選ぶとスクリプトカードが出てくる仕組み
    ---------------------------------------------------------
-   ★ 実際に配信するコードへ差し替えるときは、この
-     SCRIPT_DATA の文字列だけ書き換えればOKです。
-     key: プルダウンの 1〜5 / value: カード1・2・3 の中身
+   ★ ここを編集するだけで、プルダウンの表示名・カードの名前・
+     コピーされるコードのすべてが変わります。他のファイルは
+     一切いじらなくてOKです。
+
+   使い方:
+   - SCRIPT_DATA のキー(1〜5)がプルダウンの並び順です。
+   - label      … プルダウインに表示される名前
+   - cards      … そのカテゴリを選んだときに出てくるカード
+     - label    … カードの名前（見出し）
+     - code     … 白い枠に表示され、コピーされるコード本体
+       （コピー時は自動で "--カードの名前" が1行目に付きます）
+   - カードは3枚に固定していません。増やしたり減らしたりも
+     自由にできます（配列の中身を足し引きするだけ）。
    --------------------------------------------------------- */
 const SCRIPT_DATA = {
-  1: ['SC1-1', 'SC1-2', 'SC1-3'],
-  2: ['SC2-1', 'SC2-2', 'SC2-3'],
-  3: ['SC3-1', 'SC3-2', 'SC3-3'],
-  4: ['SC4-1', 'SC4-2', 'SC4-3'],
-  5: ['SC5-1', 'SC5-2', 'SC5-3'],
+  1: {
+    label: 'ぷるだうん',
+    cards: [
+      { label: 'ぷるだうん1', code: 'プルダウンコード' },
+      { label: 'カード2', code: 'ここにカテゴリ1・カード2のコードを入力' },
+      { label: 'カード3', code: 'ここにカテゴリ1・カード3のコードを入力' },
+    ],
+  },
+  2: {
+    label: 'ふたつめ',
+    cards: [
+      { label: 'ふたつめ2', code: '二つ目のこーど' },
+      { label: 'カード2', code: 'ここにカテゴリ2・カード2のコードを入力' },
+      { label: 'カード3', code: 'ここにカテゴリ2・カード3のコードを入力' },
+    ],
+  },
+  3: {
+    label: '3',
+    cards: [
+      { label: 'カード1', code: 'ここにカテゴリ3・カード1のコードを入力' },
+      { label: 'カード2', code: 'ここにカテゴリ3・カード2のコードを入力' },
+      { label: 'カード3', code: 'ここにカテゴリ3・カード3のコードを入力' },
+    ],
+  },
+  4: {
+    label: '4',
+    cards: [
+      { label: 'カード1', code: 'ここにカテゴリ4・カード1のコードを入力' },
+      { label: 'カード2', code: 'ここにカテゴリ4・カード2のコードを入力' },
+      { label: 'カード3', code: 'ここにカテゴリ4・カード3のコードを入力' },
+    ],
+  },
+  5: {
+    label: '5',
+    cards: [
+      { label: 'カード1', code: 'ここにカテゴリ5・カード1のコードを入力' },
+      { label: 'カード2', code: 'ここにカテゴリ5・カード2のコードを入力' },
+      { label: 'カード3', code: 'ここにカテゴリ5・カード3のコードを入力' },
+    ],
+  },
 };
 
 function initScriptPage () {
@@ -71,42 +116,59 @@ function initScriptPage () {
 
   const selectedTag  = document.getElementById('selectedTag');
   const selectedNum  = document.getElementById('selectedNum');
-  const cards        = Array.from(document.querySelectorAll('.script-card'));
+  const cardsWrap    = document.getElementById('scriptCards');
   const emptyHint    = document.getElementById('emptyHint');
+
+  // プルダウンの選択肢を SCRIPT_DATA から自動で作る
+  Object.keys(SCRIPT_DATA).forEach((key) => {
+    const opt = document.createElement('option');
+    opt.value = key;
+    opt.textContent = SCRIPT_DATA[key].label;
+    select.appendChild(opt);
+  });
 
   select.addEventListener('change', () => {
     const value = select.value;
+    if (cardsWrap) cardsWrap.innerHTML = ''; // 前の選択肢のカードは一旦クリア
 
     if (!value) {
-      cards.forEach((c) => c.classList.remove('is-show'));
       selectedTag && selectedTag.classList.remove('is-show');
       emptyHint && emptyHint.classList.remove('is-hidden');
       return;
     }
 
-    const codes = SCRIPT_DATA[value] || [];
+    const category = SCRIPT_DATA[value];
+    if (!category) return;
 
     // 選択中タグをトップに表示（=プルダウンは閉じたまま選択内容が分かる）
     if (selectedTag && selectedNum) {
-      selectedNum.textContent = value;
+      selectedNum.textContent = category.label;
       selectedTag.classList.add('is-show');
     }
 
-    // カード1・2・3 を表示し、中の枠に sc〇 を差し込む
-    cards.forEach((card, i) => {
-      const codeEl = card.querySelector('code');
-      const copyBtn = card.querySelector('.copy-btn');
-      const text = codes[i] || `SC${value}-${i + 1}`;
-      // コピーされる内容: Lua用に "--カード◯" の後ろで改行してコードを続ける
-      const copyText = `--カード${i + 1}\n${text}`;
+    // カードを1枚ずつ作って、白い枠に code を差し込む
+    category.cards.forEach((card) => {
+      const copyText = `--${card.label}\n${card.code}`; // Lua用: 1行目コメント→改行→コード
 
-      if (codeEl) codeEl.textContent = text;
-      if (copyBtn) {
-        copyBtn.dataset.copy = copyText;
-        copyBtn.classList.remove('is-copied');
-        copyBtn.querySelector('.copy-btn__label').textContent = 'コピー';
-      }
-      card.classList.add('is-show');
+      const el = document.createElement('div');
+      el.className = 'script-card is-show';
+      el.innerHTML = `
+        <div class="script-card__head">
+          <span class="script-card__label"></span>
+        </div>
+        <div class="code-frame">
+          <code></code>
+        </div>
+        <button class="copy-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          <span class="copy-btn__label">コピー</span>
+        </button>
+      `;
+      el.querySelector('.script-card__label').textContent = card.label;
+      el.querySelector('code').textContent = card.code;
+      el.querySelector('.copy-btn').dataset.copy = copyText;
+
+      cardsWrap && cardsWrap.appendChild(el);
     });
 
     emptyHint && emptyHint.classList.add('is-hidden');
@@ -121,14 +183,14 @@ function initCopyButtons () {
     const btn = e.target.closest('.copy-btn');
     if (!btn) return;
 
-    const text = btn.dataset.copy || btn.closest('.code-frame')?.querySelector('code')?.textContent || '';
+    const card = btn.closest('.script-card');
+    const codeText = card?.querySelector('code')?.textContent || '';
+    const text = btn.dataset.copy || codeText;
     if (!text) return;
-
-    const displayText = btn.closest('.code-frame')?.querySelector('code')?.textContent || text;
 
     try {
       await copyToClipboard(text);
-      showToast(`「${displayText}」をコピーしました！`);
+      showToast(`「${codeText || text}」をコピーしました！`);
       const label = btn.querySelector('.copy-btn__label');
       btn.classList.add('is-copied');
       if (label) {
