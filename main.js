@@ -69,43 +69,17 @@ function initReveal () {
    --------------------------------------------------------- */
 const SCRIPT_DATA = {
   1: {
-    label: 'ぷるだうん',
+    label: 'UNIVERSAL',
     cards: [
-      { label: 'ぷるだうん1', code: 'プルダウンコード' },
-      { label: 'カード2', code: 'ここにカテゴリ1・カード2のコードを入力' },
-      { label: 'カード3', code: 'ここにカテゴリ1・カード3のコードを入力' },
+      { label: 'Infinite Yield', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()' },
+      { label: 'Ghost Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh11/spicy/refs/heads/main/GhostHub.lua"))()' },
+      { label: '', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()' },
     ],
   },
   2: {
-    label: 'ふたつめ',
+    label: 'TROLL',
     cards: [
-      { label: 'ふたつめ2', code: '二つ目のこーど' },
-      { label: 'カード2', code: 'ここにカテゴリ2・カード2のコードを入力' },
-      { label: 'カード3', code: 'ここにカテゴリ2・カード3のコードを入力' },
-    ],
-  },
-  3: {
-    label: '3',
-    cards: [
-      { label: 'カード1', code: 'ここにカテゴリ3・カード1のコードを入力' },
-      { label: 'カード2', code: 'ここにカテゴリ3・カード2のコードを入力' },
-      { label: 'カード3', code: 'ここにカテゴリ3・カード3のコードを入力' },
-    ],
-  },
-  4: {
-    label: '4',
-    cards: [
-      { label: 'カード1', code: 'ここにカテゴリ4・カード1のコードを入力' },
-      { label: 'カード2', code: 'ここにカテゴリ4・カード2のコードを入力' },
-      { label: 'カード3', code: 'ここにカテゴリ4・カード3のコードを入力' },
-    ],
-  },
-  5: {
-    label: '5',
-    cards: [
-      { label: 'カード1', code: 'ここにカテゴリ5・カード1のコードを入力' },
-      { label: 'カード2', code: 'ここにカテゴリ5・カード2のコードを入力' },
-      { label: 'カード3', code: 'ここにカテゴリ5・カード3のコードを入力' },
+      { label: 'まだつくってないーー', code: '' },
     ],
   },
 };
