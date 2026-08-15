@@ -88,7 +88,8 @@ const SCRIPT_DATA = {
     cards: [
       { label: 'NN Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/NN%20Hub.lua"))()' },
       { label: '', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/NN%20Hub.lua"))()' },
-  },
+  ],
+       },
 };
 function initScriptPage () {
   const select = document.getElementById('scriptSelect');
