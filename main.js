@@ -86,7 +86,7 @@ const SCRIPT_DATA = {
    3: {
     label: 'NN',
     cards: [
-      { label: 'NN Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()' },
+      { label: 'NN Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/NN%20Hub.lua"))()' },
     ],
   },
 };
