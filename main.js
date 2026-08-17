@@ -120,6 +120,9 @@ const SCRIPT_DATA = {
     label: 'Steal a Brainrot',
     cards: [
 { label: 'Green DT Copy', code: 'loadstring(game:HttpGet("https://x.gd/DTcopyGreenHUB"))()' },
+{ label: 'Rubi HUB', code: 'loadstring(game:HttpGet("https://pastebin.com/raw/1mTMiVL8"))()' },
+{ label: 'mvs2', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/Zyunnsui/a81efdd72f2befeafbf2d5d4b83268d3/raw/bbeeb1c4b0076901b04c0a0fae4fce5f53e575c0/ok"))()' },
+{ label: 'ZL', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xspeedHub0/Zlhub/main/ZLPVPreview.lua"))()' },
 { label: 'NH', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Vulkan/refs/heads/main/Tr"))()' },
 { label: 'ラグ', code: 'loadstring(game:HttpGet("https://tcscripts.discloud.app/scripts/lagsemaura"))()' },
 { label: 'ラグv8', code: 'loadstring(game:HttpGet("https://files.zvyz.live/scripts/Cracked/TSKSkids/SVD8_Crack.luau"))()' },
@@ -136,6 +139,8 @@ const SCRIPT_DATA = {
 { label: 'Fadhen Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/username/fadhen-stealabrainrot/main/loader.lua", true))()' },
 { label: 'Ugly Hub', code: 'loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/53325754de16c11fbf8bf78101c1c881.lua"))()' },
 { label: 'Trax Spawner', code: 'loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/visual2.lua"))()' },
+{ label: 'Moon HUB', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/KaspikScriptsRb/steal-a-brainrot/refs/heads/main/.lua"))()' },
+{ label: 'Ilusión Hub Duels', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/fdellacortw-svg/Website/refs/heads/main/config1"))()' },
           ],
   },
 };
