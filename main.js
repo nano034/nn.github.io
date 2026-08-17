@@ -116,6 +116,28 @@ const SCRIPT_DATA = {
       { label: 'Xle', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()' },
           ],
   },
+   6: {
+    label: 'Steal a Brainrot',
+    cards: [
+{ label: 'Green DT Copy', code: 'loadstring(game:HttpGet("https://x.gd/DTcopyGreenHUB"))()' },
+{ label: 'NH', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Vulkan/refs/heads/main/Tr"))()' },
+{ label: 'ラグ', code: 'loadstring(game:HttpGet("https://tcscripts.discloud.app/scripts/lagsemaura"))()' },
+{ label: 'ラグv8', code: 'loadstring(game:HttpGet("https://files.zvyz.live/scripts/Cracked/TSKSkids/SVD8_Crack.luau"))()' },
+{ label: 'オートジョイナー', code: 'loadstring(game:HttpGet("https://pastebin.com/raw/EZTjNyrX"))()' },
+{ label: 'SK Duels v1', code: 'loadstring(game:HttpGet("https://sk-konbu.site/SKHub/v1.txt"))()' },
+{ label: 'Crack NineHub', code: 'loadstring(game:HttpGet("https://sk-delt4.neocities.org/Crack_ninehub.lol"))()' },
+{ label: '22s', code: 'loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/0fbe1cfb1005a43bbfeb46cd458b7f09.lua"))()' },
+{ label: 'LEMON DUELS', code: 'loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/387a5df3b561f6821c25654316d0e352.lua"))()' },
+{ label: 'SK Spawner', code: 'loadstring(game:HttpGet("https://sk-konbu.site/SKHub/free/SPAWNER-MADE-BY-SK"))()' },
+{ label: 'Miranda', code: 'loadstring(game:HttpGet("https://pastefy.app/ur5hn7LW/raw",true))()' },
+{ label: 'DUEL script', code: 'loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/54f8b0d7734b505dae326f5b1f44f324.lua"))()' },
+{ label: 'Chilli HUB', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()' },
+{ label: 'Echo Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/acesolos/Echo/refs/heads/main/hehe"))()' },
+{ label: 'Fadhen Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/username/fadhen-stealabrainrot/main/loader.lua", true))()' },
+{ label: 'Ugly Hub', code: 'loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/53325754de16c11fbf8bf78101c1c881.lua"))()' },
+{ label: 'Trax Spawner', code: 'loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/visual2.lua"))()' },
+          ],
+  },
 };
 function initScriptPage () {
   const select = document.getElementById('scriptSelect');
