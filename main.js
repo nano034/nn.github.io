@@ -82,7 +82,7 @@ const SCRIPT_DATA = {
   2: {
     label: 'TIOLL',
     cards: [
-      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'ない', code: 'ないよー' },
     ],
   },
    3: {
@@ -121,6 +121,7 @@ const SCRIPT_DATA = {
     cards: [
 { label: 'Green DT Copy', code: 'loadstring(game:HttpGet("https://x.gd/DTcopyGreenHUB"))()' },
 { label: 'Rubi HUB', code: 'loadstring(game:HttpGet("https://pastebin.com/raw/1mTMiVL8"))()' },
+{ label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },       
 { label: 'mvs2', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/Zyunnsui/a81efdd72f2befeafbf2d5d4b83268d3/raw/bbeeb1c4b0076901b04c0a0fae4fce5f53e575c0/ok"))()' },
 { label: 'ZL', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xspeedHub0/Zlhub/main/ZLPVPreview.lua"))()' },
 { label: 'NH', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/ily123950/Vulkan/refs/heads/main/Tr"))()' },
