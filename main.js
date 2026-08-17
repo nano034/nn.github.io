@@ -109,6 +109,13 @@ const SCRIPT_DATA = {
       { label: 'krnl reimu', code: 'loadstring(game:HttpGet("https://pastebin.com/raw/gQEWVYaY"))()' },
           ],
   },
+   5: {
+    label: 'Blox Fruits',
+    cards: [
+      { label: 'redz', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)' },
+      { label: 'Xle', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()' },
+          ],
+  },
 };
 function initScriptPage () {
   const select = document.getElementById('scriptSelect');
