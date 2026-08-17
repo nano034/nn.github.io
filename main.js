@@ -75,6 +75,7 @@ const SCRIPT_DATA = {
       { label: 'Ghost Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh11/spicy/refs/heads/main/GhostHub.lua"))()' },
       { label: 'Fly Gui V3', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()' },
       { label: 'Aim Bot', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))()' },
+      { label: 'Invisible', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()' },
     ],
   },
   2: {
