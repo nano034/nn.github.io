@@ -97,6 +97,7 @@ const SCRIPT_DATA = {
     label: 'Fling Things and People',
     cards: [
       { label: 'blitz', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/refs/heads/main/FTAP.lua"))()' },
+      { label: 'GGOG', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Fling-Things-and-People-GGOG-Script-165953"))()' },
       { label: 'alan hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/Artss1/Flades_Hub/refs/heads/main/We%20Are%20Arts.lua"))()' },
       { label: 'klal hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/fratelevostru9999/src/refs/heads/main/VenomX%20Fling%20Things%20And%20People",true))()' },
       { label: 'mega hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxGPT/chatgpt-scripts/refs/heads/main/mega%20hub.lua"))()' },
