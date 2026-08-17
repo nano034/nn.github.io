@@ -87,9 +87,22 @@ const SCRIPT_DATA = {
     label: 'NN',
     cards: [
       { label: 'NN Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/NN%20Hub.lua"))()' },
-      { label: '', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/NN%20Hub.lua"))()' },
-  ],
-       },
+      { label: 'Item True', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/NN%20Hub.lua"))()' },
+      { label: 'ESP', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nano034/nn.github.io/refs/heads/main/script/ESP.lua"))()' },
+     ],
+   },
+   4: {
+    label: 'Fling Things and People',
+    cards: [
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+      { label: 'Open Rugger', code: 'loadstring(game:HttpGet("https://gist.githubusercontent.com/totohub-ex/3b5193e9ebcf99ab6460eab9f6dc7852/raw/gistfile1.txt"))()' },
+          ],
+  },
 };
 function initScriptPage () {
   const select = document.getElementById('scriptSelect');
