@@ -1,6 +1,7 @@
 --[[
 このスクリプトはnanoxが作成しました！
 nanoxのサーバーはこちらから！
+
 https://nano034.github.io/nn.github.io/index.html
 
 NN Hub の出来る事
