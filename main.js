@@ -285,3 +285,34 @@ function showToast (message) {
     toast.classList.remove('is-show');
   }, 2000);
 }
+/* ---------------------------------------------------------
+   DevTools検知ロック（F12対策）
+   --------------------------------------------------------- */
+function initDevtoolsLock() {
+  setInterval(() => {
+    const threshold = 180; // DevToolsの幅差で判定
+    const w = window.outerWidth - window.innerWidth;
+    const h = window.outerHeight - window.innerHeight;
+
+    const devtoolsOpen = w > threshold || h > threshold;
+
+    if (devtoolsOpen) {
+      document.body.innerHTML = `
+        <div style="
+          height:100vh;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          flex-direction:column;
+          background:#000;
+          color:#fff;
+          font-family: 'Zen Maru Gothic', sans-serif;
+          text-align:center;
+        ">
+          <h1 style="font-size:32px; margin-bottom:10px;">DevTools detected</h1>
+          <p style="opacity:0.8;">このページでは開発者ツールは使用できません。</p>
+        </div>
+      `;
+    }
+  }, 500);
+}
