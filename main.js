@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initScriptPage();
   initCopyButtons();
+  initDevtoolsLock();   // ← これを追加
 });
+
 
 /* ---------------------------------------------------------
    ボトムナビ: 現在のページに is-active を付与
