@@ -291,14 +291,17 @@ function showToast (message) {
    DevTools検知ロック（F12対策）
    --------------------------------------------------------- */
 function initDevtoolsLock() {
+  const originalHTML = document.body.innerHTML; // 元のページを保存
+
   setInterval(() => {
-    const threshold = 180; // DevToolsの幅差で判定
+    const threshold = 180;
     const w = window.outerWidth - window.innerWidth;
     const h = window.outerHeight - window.innerHeight;
 
     const devtoolsOpen = w > threshold || h > threshold;
 
     if (devtoolsOpen) {
+      // ロック画面
       document.body.innerHTML = `
         <div style="
           height:100vh;
@@ -315,6 +318,11 @@ function initDevtoolsLock() {
           <p style="opacity:0.8;">このページでは開発者ツールは使用できません。</p>
         </div>
       `;
+    } else {
+      // DevToolsを閉じたら元のページに戻す
+      if (document.body.innerHTML.includes("DevTools detected")) {
+        document.body.innerHTML = originalHTML;
+      }
     }
   }, 500);
 }
