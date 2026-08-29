@@ -364,3 +364,47 @@ document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
   return false;
 }, false);
+document.addEventListener('keydown', function (e) {
+  const key = (e.key || '').toLowerCase();
+  const code = e.keyCode || e.which; // 古いブラウザ向けフォールバック
+
+  // F12 (keyCode: 123)
+  if (key === 'f12' || code === 123) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+Shift+I / Cmd+Option+I (keyCode: 73 = 'I')
+  if ((e.ctrlKey && e.shiftKey && (key === 'i' || code === 73)) ||
+      (e.metaKey && e.altKey && (key === 'i' || code === 73))) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+Shift+J / Cmd+Option+J (keyCode: 74 = 'J')
+  if ((e.ctrlKey && e.shiftKey && (key === 'j' || code === 74)) ||
+      (e.metaKey && e.altKey && (key === 'j' || code === 74))) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+Shift+C (要素の検証) (keyCode: 67 = 'C')
+  if ((e.ctrlKey && e.shiftKey && (key === 'c' || code === 67)) ||
+      (e.metaKey && e.altKey && (key === 'c' || code === 67))) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+U / Cmd+Option+U (ソース表示) (keyCode: 85 = 'U')
+  if ((e.ctrlKey && (key === 'u' || code === 85)) ||
+      (e.metaKey && e.altKey && (key === 'u' || code === 85))) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+S / Cmd+S (保存) (keyCode: 83 = 'S')
+  if ((e.ctrlKey || e.metaKey) && (key === 's' || code === 83)) {
+    e.preventDefault();
+    return false;
+  }
+}, false);
