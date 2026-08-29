@@ -326,3 +326,41 @@ function initDevtoolsLock() {
     }
   }, 500);
 }
+document.addEventListener('keydown', function (e) {
+  // F12
+  if (e.key === 'F12') {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+Shift+I (Windows/Linux) / Cmd+Option+I (Mac)
+  if ((e.ctrlKey && e.shiftKey && e.key === 'I') ||
+      (e.metaKey && e.altKey && e.key === 'I')) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+Shift+J (コンソール)
+  if ((e.ctrlKey && e.shiftKey && e.key === 'J') ||
+      (e.metaKey && e.altKey && e.key === 'J')) {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+U (ソース表示)
+  if (e.ctrlKey && e.key === 'u') {
+    e.preventDefault();
+    return false;
+  }
+
+  // Ctrl+S (保存) ※おまけでよく一緒に潰される
+  if (e.ctrlKey && e.key === 's') {
+    e.preventDefault();
+    return false;
+  }
+}, false);
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  return false;
+}, false);
