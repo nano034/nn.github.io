@@ -79,6 +79,7 @@ const SCRIPT_DATA = {
       { label: 'VFly noclip', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VFly-gui-and-noclip-78112"))()' },
       { label: 'Aim Bot', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))()' },
       { label: 'Invisible', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()' },
+      { label: 'PR HUB (Byぷり)', code: 'loadstring(game:HttpGet("https://pastefy.app/71ug2hy1/raw"))()' },
     ],
   },
   2: {
