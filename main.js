@@ -110,7 +110,7 @@ const SCRIPT_DATA = {
       { label: 'autoaim', code: 'Ioadstring(game:HttpGet("https://raw.githubusercontent.com/eisyu-tech/aim_bot_MoBA/refs/heads/main/hello.lua"))()' },
       { label: 'poophub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/ilovepoop0653/PoopHUB/refs/heads/main/IlovePoop"))()' },
       { label: 'krnl reimu', code: 'loadstring(game:HttpGet("https://pastebin.com/raw/gQEWVYaY"))()' },
-      { label: 'yaju hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/kingmagro2525-netizen/yajuhub/main/Qop.Xxc.lua"))()' },
+      { label: 'YAJU HUB', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/kingmagro2525-netizen/yajuhub/main/Qop.Xxc.lua"))()' },
           ],
   },
    5: {
