@@ -74,12 +74,13 @@ const SCRIPT_DATA = {
     label: 'UNIVERSAL',
     cards: [
       { label: 'Infinite Yield', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()' },
-      { label: 'Ghost Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh11/spicy/refs/heads/main/GhostHub.lua"))()' },
+      { label: 'Ghost Hub 🔑', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh11/spicy/refs/heads/main/GhostHub.lua"))()' },
       { label: 'Fly Gui V3', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()' },
-      { label: 'VFly noclip', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VFly-gui-and-noclip-78112"))()' },
+      { label: 'VFly Noclip', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VFly-gui-and-noclip-78112"))()' },
       { label: 'Aim Bot', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))()' },
       { label: 'Invisible', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()' },
       { label: 'PR HUB (Byぷり)', code: 'loadstring(game:HttpGet("https://pastefy.app/71ug2hy1/raw"))()' },
+      { label: 'Cryptic Hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/OnlyCryptic/Cryptic/main/main.lua"))()' },
     ],
   },
   2: {
@@ -99,7 +100,7 @@ const SCRIPT_DATA = {
    4: {
     label: 'Fling Things and People',
     cards: [
-      { label: 'blitz', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/refs/heads/main/FTAP.lua"))()' },
+      { label: 'Blitz ', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/refs/heads/main/FTAP.lua"))()' },
       { label: 'GGOG', code: 'loadstring(game:HttpGet("https://rawscripts.net/raw/Fling-Things-and-People-GGOG-Script-165953"))()' },
       { label: 'alan hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/Artss1/Flades_Hub/refs/heads/main/We%20Are%20Arts.lua"))()' },
       { label: 'klal hub', code: 'loadstring(game:HttpGet("https://raw.githubusercontent.com/fratelevostru9999/src/refs/heads/main/VenomX%20Fling%20Things%20And%20People",true))()' },
